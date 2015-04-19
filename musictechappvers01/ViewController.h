@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)slowerPressed:(UIButton *)sender;
+- (IBAction)fasterPressed:(UIButton *)sender;
 
 @end
 

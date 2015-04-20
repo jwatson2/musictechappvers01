@@ -61,7 +61,7 @@
     sa.sin_port = htons(1337);
     
     
-    OutBufferLength = 0;
+//    OutBufferLength = 0;
     bytes_sent = sendto(sock, OutBuffer, OutBufferLength, 0,(struct sockaddr*)&sa, sizeof (struct sockaddr_in));
     if (bytes_sent < 0)
         fprintf(stderr,"Error sending packet: %s\n",strerror(errno));
